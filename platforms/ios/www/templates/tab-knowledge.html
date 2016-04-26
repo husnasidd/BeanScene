@@ -1,0 +1,217 @@
+<ion-view view-title="Coffee Knowledge">
+
+<script id="photoModal.html" type="text/ng-template">
+    <ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-positive">
+        <h1 class="title">Photos</h1>
+        <button class="button button-clear button-primary" ng-click="closeModal(1)">Back</button>
+    </ion-header-bar>
+    
+    <ion-content>
+        <ion-slides id='card' options="options" slider="data.slider">
+            <ion-slide-page>
+            <div class="box blue"> <img src="img/latte.jpg"/></div>
+            </ion-slide-page>
+            <ion-slide-page>
+            <div class="box yellow"><img src="img/roaster.jpg"/></div>
+            </ion-slide-page>
+            <ion-slide-page>
+            <div class="box pink"> <img src="img/coffeetree.jpg"/></div>
+            </ion-slide-page>
+            <ion-slide-page>
+            <div class="box pink"> <img src="img/coffeecherries.jpg"/></div>
+            </ion-slide-page>
+        </ion-slides>
+    
+    </ion-content>
+    </ion-modal-view>
+</script>
+
+<script id="wheelModal.html" type="text/ng-template">
+    <ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Flavor Wheel</h1>
+    <button class="button button-clear button-primary" ng-click="closeModal(2)">Back</button>
+    </ion-header-bar>
+    
+    <ion-content>
+        <div class="list card">
+            <div class="item item-avatar">
+            <h2>Industry Standard</h2>
+            <p>Specialty Coffee Association of America</p>
+            </div>
+            
+            <div class="item item-image">
+            <img src="img/flavorWheel2.png">
+            </div>
+        </div>
+        
+        <div class="list card">
+            <div class="item item-avatar">
+            <h2>Counter Culture Coffee</h2>
+            <p>Roaster - Durham,NC</p>
+            </div>
+            
+            <div class="item item-image">
+            <img src="img/flavorWheel1.png">
+            </div>
+        </div>
+    
+    </ion-content>
+    </ion-modal-view>
+</script>
+
+<script id="drinksModal.html" type="text/ng-template">
+    <ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Popular Drinks</h1>
+    <button class="button button-clear button-primary" ng-click="closeModal(3)">Back</button>
+    </ion-header-bar>
+    
+    <ion-content id ='drinks'>
+    <img src='img/drinks.png' width='100%' border='0'alt='Coffee Drinks'/>
+    
+    </ion-content>
+    </ion-modal-view>
+</script>
+
+<script id="brewingModal.html" type="text/ng-template">
+    <ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Brewing Methods</h1>
+    <button class="button button-clear button-primary" ng-click="closeModal(4)">Back</button>
+    </ion-header-bar>
+    
+    <ion-content id ='brew'>
+    <p><a href='http://www.coffeetastingclub.com/blog/coffee-grinds-guide'><img src='http://www.coffeetastingclub.com/blog/wp-content/uploads/2016/02/coffee-grinds.png' width='100%' border='0' alt='How To Brew The Perfect Coffee'/></a></p>
+    <p>
+    
+    </ion-content>
+    </ion-modal-view>
+</script>
+
+<script id="influenceModal.html" type="text/ng-template">
+    <ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Influence of Coffee</h1>
+    <button class="button button-clear button-primary" ng-click="closeModal(5)">Back</button>
+    </ion-header-bar>
+    
+    <ion-content id = 'influence'>
+        <p><a href='http://coffeetastingclub.com/blog/the-influence-of-coffee/'><img src='http://coffeetastingclub.com/blog/wp-content/uploads/2015/04/coffee-world.png' width='100%' border='0'alt='Influence of Coffee' /></a></p>
+        <p>
+    </ion-content>
+    </ion-modal-view>
+</script>
+
+<script id="blogModal.html" type="text/ng-template">
+    <ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Influence of Coffee</h1>
+    <button class="button button-clear button-primary" ng-click="closeModal(6)">Back</button>
+    </ion-header-bar>
+    
+    <ion-content>
+        <div class="list card">
+        <a href="#" class="item item-icon-left" onclick="window.open('http://sprudge.com/', '_system', 'location=yes')">
+            Sprudge
+            <p>Coffee news and culture.</p>
+            </a>
+            
+            <a href="#" class="item item-icon-left" onclick="window.open('http://dailycoffeenews.com/', '_system', 'location=yes')">
+            Daily Coffee News
+            <p>Geared towards coffee professionals.</p>
+            </a>
+            
+            <a href="#" class="item item-icon-left" onclick="window.open('http://thecoffeetographer.com/', '_system', 'location=yes')">
+            The Coffeetographer
+            <p>Exploring coffee culture visually.</p>
+            </a>
+            
+            <a href="#" class="item item-icon-left" onclick="window.open('http://www.thecoffeecompass.com/', '_system', 'location=yes')">
+            The Coffee Compass
+            <p>Navigate the world of coffee producres, roasters and baristas.</p>
+            </a>
+            
+            <a href="#" class="item item-icon-left" onclick="window.open('http://balzacbrothers.com/blog/', '_system', 'location=yes')">
+            Balzac Brothers
+            <p>Importer of commercial and specialty coffees.</p>
+            </a>
+            
+            <a href="#" class="item item-icon-left" onclick="window.open('http://perfectdailygrind.com/', '_system', 'location=yes')">
+            Perfect Daily Grind
+            <p>Must read daily resource for anyone with a professional or passing interest in the world of specialty coffee.</p>
+            </a>
+            
+            
+            
+        </div>
+    </ion-content>
+    </ion-modal-view>
+</script>
+
+
+<ion-content>
+    
+    <div class="row">
+        <div class="col col-50">
+            <button class="button button-full button-positive" ng-controller='ModalCtrl' ng-click="openModal(1);">
+                <br>
+            <i class="icon ion-image"></i> Photos
+            <br><br>
+            </button>
+        </div>
+        
+        <div class="col col-50">
+            <button class="button button-full button-positive" ng-controller='ModalCtrl' ng-click="openModal(2);">
+                <br>
+                <i class="icon ion-aperture"></i> Flavor Wheel
+                <br><br>
+            </button>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col col-50">
+            <button class="button button-full button-positive"  ng-controller='ModalCtrl' ng-click="openModal(3);">
+                <br>
+                <i class="icon ion-thumbsup"></i> Popular Drinks
+                <br><br>
+            </button>
+        </div>
+        
+        <div class="col col-50">
+            <button class="button button-full button-positive"  ng-controller='ModalCtrl' ng-click="openModal(4);">
+                <br>
+                <i class="icon ion-erlenmeyer-flask"></i> Brewing
+                <br><br>
+            </button>
+        </div>
+        
+    </div>
+    
+    <div class="row">
+        <div class="col col-50">
+            <button class="button button-full button-positive"  ng-controller='ModalCtrl' ng-click="openModal(5);">
+                <br>
+                <i class="icon ion-ios-world-outline"></i> Influence
+                <br><br>
+            </button>
+        </div>
+        
+        <div class="col col-50">
+            <button class="button button-full button-positive"  ng-controller='ModalCtrl' ng-click="openModal(6);">
+                <br>
+                <i class="icon ion-ios-paper"></i> Coffee Blogs
+                <br><br>
+           
+            </button>
+        </div>
+        
+    </div>
+
+
+
+    
+</ion-content>
+</ion-view>
